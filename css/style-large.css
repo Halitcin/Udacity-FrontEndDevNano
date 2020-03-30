@@ -1,0 +1,11 @@
+/* Large Screens */
+@media (min-width:901px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
+  
+}
