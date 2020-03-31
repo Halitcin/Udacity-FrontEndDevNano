@@ -30,8 +30,8 @@ footer {
     background:rgba(184, 180, 180, 0.2)
 }
 h1 {
-    color:rgba(0, 0, 0, 0.623);
-    margin: 20px;
+    color: rgba(33, 33, 235, 0.733);
+    text-transform: uppercase;
 }
 h2 {
 	color:burlywood;
