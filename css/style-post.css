@@ -1,0 +1,151 @@
+@import url("sytle-element.css");
+
+h1 {
+    color: rgba(33, 33, 235, 0.733);
+    text-transform: uppercase;
+}
+h2 {
+    color: rgba(33, 33, 235, 0.733);
+}
+p {
+    text-align: justify;
+    padding: 5px;
+}
+
+
+.container {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+article h2 {
+    font-style: italic;
+}
+footer {
+    grid-area: footer;
+}
+section {
+    border: 2px solid #708090;
+    text-align: center;
+    background-color: rgb(188, 202, 202);
+    width: 100%;
+}
+section h5 {
+    text-align: center;
+}
+
+figure {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+img {    
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+    padding: 10px 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about img {
+    width: 40%;
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto 1fr auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    figure {
+        float: left;
+        width: 50%;
+    }
+    nav a {
+        display: inline-block;
+    }
+    nav a:last-child {
+        float: right;
+    }
+    section {
+        width: 50%;
+        height: auto;
+    }
+    
+}
+@media (min-width:901px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 1fr auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header header header"
+        "main main main aside"
+         "footer footer footer footer";
+      }
+    main {
+      
+      width: 100%;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    figure {
+        float: left;
+        width: 30%;
+    }
+    nav a {
+        display: inline-block;
+    }
+    nav a:last-child {
+        float: right;
+    }
+    section {
+        width: 100%;
+        height: auto;
+    }
+}

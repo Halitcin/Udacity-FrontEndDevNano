@@ -7,6 +7,12 @@
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
+    nav a {
+        display: inline-block;
+    }
+    nav a:last-child {
+        float: right;
+    }
     
     
 }

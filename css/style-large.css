@@ -6,6 +6,12 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 20px;
+  }
+  nav a {
+    display: inline-block;
+  }
+  nav a:last-child {
+      float: right;
 }
   
 }
