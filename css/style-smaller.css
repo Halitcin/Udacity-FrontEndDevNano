@@ -1,4 +1,10 @@
 /* Anything smaller than first breakpoint 600px */
+main {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -8,3 +14,5 @@
 	background-color: aliceblue;
 	margin-bottom: 20px;
 }
+
+

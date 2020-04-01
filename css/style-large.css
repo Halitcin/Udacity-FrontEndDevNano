@@ -2,7 +2,7 @@
 @media (min-width:901px) {
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 20px;
@@ -12,6 +12,7 @@
   }
   nav a:last-child {
       float: right;
-}
+  }
+
   
 }
